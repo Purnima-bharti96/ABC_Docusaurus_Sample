@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "build": "docusaurus build",
-    "deploy": "gh-pages -d build",
+    "deploy": "cross-env GIT_USER=Purnima-bharti96 USE_SSH=false docusaurus deploy",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "deploy": "gh- pages -d build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
