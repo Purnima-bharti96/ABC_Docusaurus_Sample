@@ -23,12 +23,12 @@ const config = {
   url: 'https://Purnima-bharti96.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: 'ABC_Docussaurus_Sample',
+  baseUrl: '/ABC_Docusaurus_Sample/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'Purnima-bharti96', // Usually your GitHub org/user name.
-  projectName: 'ABC_Docussaurus_Sample', // Usually your repo name.
+  projectName: 'ABC_Docusaurus_Sample', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -71,7 +71,7 @@ const config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],

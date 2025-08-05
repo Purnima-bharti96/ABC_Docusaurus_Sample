@@ -7,13 +7,13 @@ sidebar_position: 1
 This document provides instructions on how to install and configure ABC Enhance and ABC Prospecting packages within XYZ. 
 ## 🚀 Getting Started
 
-## Generate a new site
+### Generate a new site
 
-### Sign Up
+#### Sign Up
 
 Register at [dinosaurs.ai/signup](#) to get your API key.
 
-### Authentication
+#### Authentication
 
 Include your API key in the request header:
 
@@ -25,7 +25,7 @@ The classic template will automatically be added to your project after you run t
 
 ```bash
 npm init docusaurus@latest my-website classic
-```
+
 
 You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
