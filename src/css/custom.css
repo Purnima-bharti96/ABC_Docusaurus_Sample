@@ -79,7 +79,7 @@ h3 {
 
 h4 {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -98,6 +98,21 @@ ul {
 
 ul li {
   margin-bottom: 0.5rem;
+}
+/* Ensure numbered list is properly indented */
+ol {
+  padding-left: 1.5rem; /* or try 2rem if needed */
+  margin-left: 0;
+}
+
+/* Optional: adjust spacing under list items */
+ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* Ensure paragraphs under lists are aligned properly */
+ol li p {
+  margin-left: 0;
 }
 
 /* Add spacing between sections */
@@ -148,4 +163,41 @@ blockquote {
   margin: 1rem 0;
   border-left: 5px solid #007bff;
   background-color: #f0f8ff;
+}
+/* Base style for all tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  table-layout: fixed;
+}
+
+/* Style for table headers and cells */
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px 16px;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+/* Optional: Highlight header */
+thead {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+/* Optional: Alternate row shading */
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+/* Improve code-style cell readability */
+td code {
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.95em;
+  display: inline-block;
 }

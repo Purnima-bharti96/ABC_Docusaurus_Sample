@@ -5,15 +5,13 @@ sidebar_position: 1
 # Overview
 
 This document provides instructions on how to install and configure ABC Enhance and ABC Prospecting packages within XYZ. 
-## 🚀 Getting Started
+## Getting Started
 
-### Generate a new site
-
-#### Sign Up
+### Sign Up
 
 Register at [dinosaurs.ai/signup](#) to get your API key.
 
-#### Authentication
+### Authentication
 
 Include your API key in the request header:
 
