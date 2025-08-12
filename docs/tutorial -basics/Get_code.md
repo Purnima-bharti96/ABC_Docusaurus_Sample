@@ -10,26 +10,33 @@ Blockly provides a script that bootstraps a starter application, which you can t
 This requires you to install [node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) before running the following commands.
 
 To create an application written in JavaScript in a ```new hello-world``` directory:
+
 ```bash
 npx @blockly/create-package app hello-world
 ```
+
 To create an application written in TypeScript in a new `hello-world` directory:
 
 ```
 npx @blockly/create-package app hello-world --typescript
 ```
+
 These create a package that imports package targets. It also uses a package.json file to manage dependencies, which makes it easy to stay up-to-date with the latest version of Blockly.
 
 It also comes with some handy starter scripts, such as one to test the project locally in a browser:
+
 ```bash
 cd hello-world
 npm run start
 ```
+
 You can refer to the generated package.json file for other commands.
+
 ## Unpkg
 If you are just playing around with ideas and don't want to bootstrap a full application, you can load Blockly from unpkg using script tags.
 
 If you add the following to any HTML page, you can open the HTML directly in a browser to experiment with Blockly:
+
 ```bash
 <!-- Load Blockly core -->
 <script src="https://unpkg.com/blockly/blockly_compressed.js"></script>
@@ -40,7 +47,9 @@ If you add the following to any HTML page, you can open the HTML directly in a b
 <!-- Load a message file -->
 <script src="https://unpkg.com/blockly/msg/en.js"></script>
 ```
+
 This is not a good long-term solution for acquiring Blockly, because it doesn't work with bundlers like webpack, but it is good for prototyping and experimentation.
+
 ## Get the code
 There are several ways which you can get the code to run Blockly.
 
@@ -49,13 +58,17 @@ The Blockly team recommends requiring Blockly through a package manager (like [N
 - It encourages [using plugins](https://developers.google.com/blockly/guides/programming/plugin_overview) instead of monkeypatching Blockly
 
 ### NPM
+
 ```bash
 npm install blockly --save
 ```
+
 ### Yarn
+
 ```bash
 yarn add blockly
 ```
+
 ### GitHub
 You can also download the compressed code from our [GitHub releases](https://github.com/google/blockly/releases). However, this requires you to manually download the code at regular intervals in order to receive the latest updates and fixes to Blockly.
 
@@ -65,7 +78,9 @@ Github downloads are only provided for convenience for developers who were previ
 
 ## Load the code
 Once you've gotten the code, there are several ways you can access it from your code.
+
 #### Script tags
+
 ```bash
 <!-- Load Blockly core -->
 <script src="./my-lib-directory/blockly/blockly_compressed.js"></script>
@@ -76,7 +91,9 @@ Once you've gotten the code, there are several ways you can access it from your 
 <!-- Load a message file -->
 <script src="./my-lib-directory/blockly/msg/en.js"></script>
 ```
+
 When using script tags, you can access imports from the global namespace:
+
 ```bash
 // Access Blockly.
 Blockly.thing;
@@ -107,11 +124,15 @@ import {javascriptGenerator} from 'blockly/javascript';
 // Import a message file.
 import * as En from 'blockly/msg/en';
 ```
+
 When you import the message files, you also need to apply them.
+
 ```bash
 Blockly.setLocale(En);
 ```
+
 #### Requires
+
 ```bash
 // Require Blockly core.
 const Blockly = require('blockly/core');
@@ -122,6 +143,7 @@ const {javascriptGenerator} =  require('blockly/javascript');
 // Require a message file.
 const En = require('blockly/msg/en');
 ```
+
 When you require the message files, you also need to apply them.
 
 ```
