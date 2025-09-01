@@ -143,7 +143,7 @@ const {javascriptGenerator} =  require('blockly/javascript');
 // Require a message file.
 const En = require('blockly/msg/en');
 ```
-
+0
 When you require the message files, you also need to apply them.
 
 ```
