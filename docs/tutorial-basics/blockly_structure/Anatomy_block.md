@@ -116,6 +116,8 @@ The best way to learn about inputs, fields, and connections is to construct bloc
 ## Icons
 In addition to inputs, connections, and fields, blocks can have one or more **icons**. These have a variety of uses, such as displaying warnings, entering block-level comments, or displaying the mutator UI. For example, here is a block with a comment icon and its associated editor.
 
+![docs/tutorial-basics/blockly-structur.md](./img/comment_icon_1.png)
+
 For more information, see [Icons](https://developers.google.com/blockly/guides/create-custom-blocks/icons/overview).
 
 ## Blocks and JavaScript objects
