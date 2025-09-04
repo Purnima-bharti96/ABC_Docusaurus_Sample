@@ -239,3 +239,19 @@ table img {
   display: block;
   margin: 0 auto;    /* center inside cell */
 }
+/* Default link color */
+a {
+  color: #0066cc;  /* your preferred color */
+  text-decoration: none; /* remove underline if desired */
+}
+
+/* Hover state */
+a:hover {
+  color: #004999; /* darker shade on hover */
+  text-decoration: underline; /* underline only on hover */
+}
+
+/* Visited links */
+a:visited {
+  color: #663399; /* optional */
+}

@@ -16,9 +16,8 @@ There are four types of connections:
 | Previous connection |![docs/tutorial-basics/blockly-structure.md](./img/previous_connection.png)|
 | Next connection |![docs/tutorial-basics/blockly-structure.md](./img/next_connection.png)|
 
-A block may have a previous connection on its top (represented as a notch) and a next connection on its bottom (represented as a tab). These allow blocks to be stacked vertically, representing a sequence of statements. A block without an output connection is called a statement block and usually has both previous and next connections.
-
 Output connections and input connections can connect together, and next connections and previous connections can connect together. You can further restrict connections with [connection checks](https://developers.google.com/blockly/guides/create-custom-blocks/inputs/connection-checks).
+
 You can [customize the shapes of connections](https://developers.google.com/blockly/guides/create-custom-blocks/renderers/create-custom-renderers/connection-shapes) using a custom renderer.
 
 ### Top-level connections
@@ -91,7 +90,7 @@ Fields are limited in what they can accept. For example, number fields only acce
 
 A **value input** contains zero or more fields and ends in an input connection. The following block replaces the number fields in the addition block with input connections. It is built from two value inputs -- the first does not contain any fields and the second contains a label field. Both end in input connections.
 
-![docs/tutorial-basics/blockly-structur.md](./img/Value_input.png)
+![docs/tutorial-basics/blockly-structur.md](./img/value_inputs_addition.png)
 
 ### Statement inputs
 The last type of input is a statement input, which contains zero or more fields and ends with a next connection. The next connection lets you nest a stack of statement blocks inside your block. For example, consider the following repeat block. The second row of this block consists of a statement input with a single label field and a next connection.
